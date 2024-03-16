@@ -27,9 +27,6 @@ func HomeHandler(c buffalo.Context) error {
 func DashboardHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("dashboard.html"))
 }
-func DeviceAdminHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("device_admin.html"))
-}
 
 func DeviceStatusHandler(c buffalo.Context) error {
 	// Retrieve device statuses (memory, storage spaces, CPU usage, etc.)
